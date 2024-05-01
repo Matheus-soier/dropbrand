@@ -291,11 +291,11 @@ export default function Page() {
               <ItensPlan icon={<HiCheck className="text-xl" />} text={"Análise de concorrentes"}/>
               <ItensPlan icon={<HiCheck className="text-xl" />} text={"Mineração - como e onde encontrar produtos"}/>
               <ItensPlan icon={<HiCheck className="text-xl" />} text={"Esteira de Produtos personalizada Trello"}/>
-              <ItensPlan icon={<HiCheck className="text-xl" />} text={"como criar uma oferta"}/>
+              <ItensPlan icon={<HiCheck className="text-xl" />} text={"Como criar uma oferta"}/>
               <ItensPlan icon={<HiCheck className="text-xl" />} text={"Aprenda a anunciar no Meta ADS, Tiktok ADS e Google ADS"}/>
               <ItensPlan icon={<HiCheck className="text-xl" />} text={"Como não ter produtos taxados"}/>
               <ItensPlan icon={<HiCheck className="text-xl" />} text={"Organização Empresarial"}/>
-              <ItensPlan icon={<HiCheck className="text-xl" />} text={"ferramentas de automação"}/>
+              <ItensPlan icon={<HiCheck className="text-xl" />} text={"Ferramentas de automação"}/>
               <hr />
               <div className="flex flex-col gap-1 justify-center">
                   <p className="font-semibold text-green-500">Bônus Exclusivos:</p>
@@ -344,7 +344,7 @@ export default function Page() {
                     <li>+ Google Tag Manager</li>
                     <li>+ fornecedor nacional (o segredo de quem escala)</li>
                     <li>+ Ferramentas Avançadas</li>
-                    <li>+ Propts e IAs para conteúdo</li>
+                    <li>+ Prompts e IAs para conteúdo</li>
                     <li>+ Como fechar com influêncers</li>
                     <li>+ tráfego UGC</li>
                     <li>+ Frete Exclusivo</li>
