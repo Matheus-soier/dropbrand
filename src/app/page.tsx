@@ -28,7 +28,7 @@ export default function Page() {
   useEffect(()=>{
     const timer = setTimeout(()=>{
       setShowBtn(true);
-    }, 8000);
+    }, 4000);
   }, []);
 
   useEffect(() => {
