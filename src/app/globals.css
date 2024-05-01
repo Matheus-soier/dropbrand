@@ -19,3 +19,18 @@
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
 }
+
+.blur-background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Para Safari e ARC Browser */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}

@@ -6,11 +6,15 @@ import { FaEyeSlash } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { BsBoxSeam } from "react-icons/bs";
 import { IoIosStarOutline } from "react-icons/io";
+import { GiSpiderWeb } from "react-icons/gi";
+import { SiAlwaysdata } from "react-icons/si";
+import { IoBagCheck } from "react-icons/io5";
+import { FaFunnelDollar } from "react-icons/fa";
 
 export default function Page() {
   
   const [desktop, setDesktop] = useState<boolean>(false);
-  const [modal, setModal] = useState<boolean>(true);
+  const [modal, setModal] = useState<boolean>(false);
   const [showBtn, setShowBtn] = useState<boolean>(false);
 
   useEffect(()=>{
@@ -41,7 +45,7 @@ export default function Page() {
       {!desktop &&
       <>
       {modal &&
-          <div className="w-screen h-screen flex justify-center items-center bg-black/60 backdrop-blur fixed top-0 left-0 z-20">
+          <div className="blur-background">
               <div className="bg-white p-5 flex justify-center items-center rounded-lg w-[90%] h-fit flex-col gap-3">
                 <FaEyeSlash className="text-black text-3xl"/>
                 <h2 className="font-bold text-xl">Atenção, Conteúdo Sensível!</h2>
@@ -70,10 +74,10 @@ export default function Page() {
             <Image src={'/cell2.png'} alt="Logo Drop Brand"  width={500} height={0}/>
             <div className="flex flex-col gap-3">
               <div className="h-full w-full rounded-md p-3 animated-gradient flex items-start flex-col justify-center gap-1">
-                  <BsBoxSeam className="text-xl"/> <p className="leading-5">Chega pedidos taxado, use nossos <span className="font-semibold">fornecedores nacionais e internacionais.</span></p>
+                  <BsBoxSeam className="text-xl"/> <p className="leading-5">Chega pedidos taxados, use nossos <span className="font-semibold">fornecedores nacionais e internacionais.</span></p>
                 </div>
                 <div className="h-full w-full rounded-md p-3 animated-gradient flex items-start flex-col justify-center gap-1">
-                <IoIosStarOutline className="text-2xl"/> <p className="leading-5"><span className="font-semibold">Aumente sua margem de lucro</span> com poucos ajustes.</p>
+                <IoIosStarOutline className="text-2xl"/> <p className="leading-5"><span className="font-semibold">Aumente sua margem de lucro</span> com poucos ajustes em sua operação.</p>
                 </div>
             </div>
             </div>
@@ -139,9 +143,47 @@ export default function Page() {
                         </li>
                     </ul>                
                 </div>
-                {/* <div className="flex flex-col items-center">
-                  <h2 className="text-3xl font-semibold capitalize">Trabalhe a teia</h2>
-                </div> */}
+                <div className="flex flex-col items-center gap-5 px-3">
+                  <h2 className="text-3xl font-semibold capitalize text-center">Aumente o número de vendas de sua operação</h2>
+                  <div className="flex flex-col gap-3 items-center w-full">
+                    <div className="border-2 border-gray-200 w-full py-3 px-4 flex justify-between items-center rounded-lg gap-6">
+                      <div className="flex flex-col">
+                        <h3 className="font-semibold text-xl">Crie uma teia</h3>
+                        <p className="text-sm">Aprenda a anúnciar em diversas plataformas de forma inteligente.</p>
+                      </div>
+                      <div className="bg-white text-black p-3 rounded-lg">
+                        <GiSpiderWeb className="text-3xl"/>
+                      </div>
+                    </div>
+                    <div className="border-2 border-gray-200 w-full py-3 px-4 flex justify-between items-center rounded-lg gap-6">
+                      <div className="flex flex-col">
+                        <h3 className="font-semibold text-xl">Analise as métricas</h3>
+                        <p className="text-sm">Saiba onde estão os gargalos da sua operação apenas olhando as métricas.</p>
+                      </div>
+                      <div className="bg-white text-black p-3 rounded-lg">
+                      <SiAlwaysdata className="text-3xl"/>
+                      </div>
+                    </div>
+                    <div className="border-2 border-gray-200 w-full py-3 px-4 flex justify-between items-center rounded-lg gap-6">
+                      <div className="flex flex-col">
+                        <h3 className="font-semibold text-xl">Aprenda a minerar</h3>
+                        <p className="text-sm">O coração da sua operação precisa ser o teste de produto, nunca pare de anúnciar!</p>
+                      </div>
+                      <div className="bg-white text-black p-3 rounded-lg">
+                        <IoBagCheck className="text-3xl"/>
+                      </div>
+                    </div>
+                    <div className="border-2 border-gray-200 w-full py-3 px-4 flex justify-between items-center rounded-lg gap-6">
+                      <div className="flex flex-col">
+                        <h3 className="font-semibold text-xl">Aumente seu ticket médio</h3>
+                        <p className="text-sm">Estruture um fúnil de vendas bem alinhado e aumente seu ticket médio/lucro.</p>
+                      </div>
+                      <div className="bg-white text-black p-3 rounded-lg">
+                      <FaFunnelDollar className="text-3xl"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
           </main>
         </div>
       </>
