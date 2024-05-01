@@ -274,9 +274,9 @@ export default function Page() {
                       <div className="bg-white p-3 rounded-lg">
                       <IoLogoWhatsapp className="text-4xl text-[#4BC658]"/>
                       </div>
-                      <div className="bg-[#09EB0B] p-3 rounded-lg">
+                      {/* <div className="bg-[#09EB0B] p-3 rounded-lg">
                       <IoIosStar className="text-4xl text-white"/>
-                      </div>
+                      </div> */}
                     </div>
                     <p className="text-center text-lg">Faremos call 3 vezes por semana até todos conteúdos serem passados, acesso vitalício ao conteúdo gravado, acesso VIP em nossa comunidade do Discord e Whatsapp, conteúdo atualizado e acesso ao nosso drive pessoal de cursos, conteúdos, temas e scripts!</p>
                 </div>
