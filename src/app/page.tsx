@@ -14,7 +14,7 @@ import { FaFunnelDollar } from "react-icons/fa";
 export default function Page() {
   
   const [desktop, setDesktop] = useState<boolean>(false);
-  const [modal, setModal] = useState<boolean>(false);
+  const [modal, setModal] = useState<boolean>(true);
   const [showBtn, setShowBtn] = useState<boolean>(false);
 
   useEffect(()=>{
