@@ -4,17 +4,19 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaEyeSlash } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { BsBoxSeam } from "react-icons/bs";
+import { IoIosStarOutline } from "react-icons/io";
 
 export default function Page() {
   
   const [desktop, setDesktop] = useState<boolean>(false);
-  const [modal, setModal] = useState<boolean>(false);
+  const [modal, setModal] = useState<boolean>(true);
   const [showBtn, setShowBtn] = useState<boolean>(false);
 
   useEffect(()=>{
     const timer = setTimeout(()=>{
       setShowBtn(true);
-    }, 15000);
+    }, 10000);
   }, []);
 
   useEffect(() => {
@@ -39,7 +41,7 @@ export default function Page() {
       {!desktop &&
       <>
       {modal &&
-          <div className="w-screen h-screen flex justify-center items-center bg-black/60 backdrop-blur fixed top-0 left-0">
+          <div className="w-screen h-screen flex justify-center items-center bg-black/60 backdrop-blur fixed top-0 left-0 z-20">
               <div className="bg-white p-5 flex justify-center items-center rounded-lg w-[90%] h-fit flex-col gap-3">
                 <FaEyeSlash className="text-black text-3xl"/>
                 <h2 className="font-bold text-xl">Atenção, Conteúdo Sensível!</h2>
@@ -53,26 +55,27 @@ export default function Page() {
               </div>
           </div>  
       }
-        <div className="w-screen h-fit flex flex-col items-center bg-black text-white py-4">
+        <div className="w-screen h-fit flex flex-col items-center bg-black text-white py-4 overflow-x-hidden">
           <header className="flex justify-center items-center w-screen h-fit px-5 pb-4 bg-black mb-3">
             <div className="w-full flex justify-center items-center">
               <Image src={'/logodp.png'} alt="Logo Drop Brand"  width={170} height={0}/>
             </div>  
           </header>
-          <main className="flex flex-col items-center px-5 gap-5">
-            <div className="flex flex-col gap-5">
+          <main className="flex flex-col items-center gap-5">
+            <div className="flex flex-col gap-5 px-5">
               <h1 className="font-bold text-start text-5xl capitalize">Domine o Dropshipping</h1>
               <h2>Descubra como <span className="font-semibold">construir uma operação lucrativa do zero</span> e alcançar <span className="font-semibold">vendas de seis dígitos mensais</span> no mercado de Dropshipping <span className="font-semibold">nacional</span> ou <span className="font-semibold">global</span>. Junte-se à nossa iniciativa exclusiva e transforme suas ambições em realidade!</h2>
             </div>
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 items-center px-5">
             <Image src={'/cell2.png'} alt="Logo Drop Brand"  width={500} height={0}/>
             <div className="flex flex-col gap-3">
-              <div className="h-full w-full rounded-md p-3 animated-gradient">
-              
+              <div className="h-full w-full rounded-md p-3 animated-gradient flex items-start flex-col justify-center gap-1">
+                  <BsBoxSeam className="text-xl"/> <p className="leading-5">Chega pedidos taxado, use nossos <span className="font-semibold">fornecedores nacionais e internacionais.</span></p>
                 </div>
-                <div className="h-full w-full rounded-md p-3 animated-gradient">
-              
+                <div className="h-full w-full rounded-md p-3 animated-gradient flex items-start flex-col justify-center gap-1">
+                <IoIosStarOutline className="text-2xl"/> <p className="leading-5"><span className="font-semibold">Aumente sua margem de lucro</span> com poucos ajustes.</p>
                 </div>
+            </div>
             </div>
             <div
                     x-data="{}"
@@ -81,7 +84,7 @@ export default function Page() {
                         ul.insertAdjacentHTML('afterend', ul.outerHTML);
                         ul.nextSibling.setAttribute('aria-hidden', 'true');
                     })"
-                    className=" w-screen mt-10 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                    className=" w-screen my-5 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] px-5"
                 >
                     <ul x-ref="logos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                         <li>
@@ -136,7 +139,9 @@ export default function Page() {
                         </li>
                     </ul>                
                 </div>
-            </div>
+                {/* <div className="flex flex-col items-center">
+                  <h2 className="text-3xl font-semibold capitalize">Trabalhe a teia</h2>
+                </div> */}
           </main>
         </div>
       </>

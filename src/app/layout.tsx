@@ -18,8 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={ubuntu.className}>{children}</body>
+    <html lang="pt-br">
+      <body className={`overflow-x-hidden ${ubuntu.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
