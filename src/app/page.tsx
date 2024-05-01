@@ -278,7 +278,7 @@ export default function Page() {
                       <IoIosStar className="text-4xl text-white"/>
                       </div>
                     </div>
-                    <p className="text-center text-lg">Faremos call 3 vezes por semana até todos conteúdos serem passados, acesso vitalício ao conteúdo gravado, acesso VIP em nossa comunidade do Discord e Whatsapp, acesso ao Close Friends do <span className="font-semibold text-[#09EB0B]">@eusoier</span> e <span className="font-semibold text-[#09EB0B]">@joaobudini</span> com conteúdo atualizado e acesso ao nosso drive pessoal de cursos, conteúdos, temas e scripts!</p>
+                    <p className="text-center text-lg">Faremos call 3 vezes por semana até todos conteúdos serem passados, acesso vitalício ao conteúdo gravado, acesso VIP em nossa comunidade do Discord e Whatsapp, conteúdo atualizado e acesso ao nosso drive pessoal de cursos, conteúdos, temas e scripts!</p>
                 </div>
                 <div className="flex flex-col items-center px-3 gap-5">
                 <h2 className="font-semibold text-center capitalize text-3xl">Planos e conteúdos</h2>
@@ -304,7 +304,6 @@ export default function Page() {
                     <li>+ Organizando colunas de métricas</li>
                     <li>+ Contingência</li>
                     <li>+ 10 temas premium</li>
-                    <li>+ Google Tag Manager</li>
                   </ul>
               </div>
               <hr />
@@ -349,6 +348,7 @@ export default function Page() {
                     <li>+ Como fechar com influêncers</li>
                     <li>+ tráfego UGC</li>
                     <li>+ Frete Exclusivo</li>
+                    <li>+ Close Friends Vitalício</li>
                   </ul>
               </div>
               <hr />
