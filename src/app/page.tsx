@@ -20,7 +20,7 @@ export default function Page() {
   useEffect(()=>{
     const timer = setTimeout(()=>{
       setShowBtn(true);
-    }, 10000);
+    }, 8000);
   }, []);
 
   useEffect(() => {
@@ -183,6 +183,79 @@ export default function Page() {
                       </div>
                     </div>
                   </div>
+                </div>
+                <div className="grid grid-cols-2 gap-5 w-full px-3 mt-5 relative items-center">
+                  <div className="flex flex-col gap-3">
+                    <h2 className="w-full font-semibold text-3xl">Aprenda o Blackhat</h2>
+                    <ul className="flex flex-col gap-2">
+                      <li>Clone páginas/ofertas</li>
+                      <li>Crie docs e aprove suas contas</li>
+                      <li>Tenha acesso a scripts exclusivos</li>
+                    </ul>
+                  </div>
+                  <Image src={'/mascara.png'} alt="máscara" width={300} height={0} className="absolute -top-5 -right-24" />
+                </div>
+                <div
+                    x-data="{}"
+                    x-init="$nextTick(() => {
+                        let ul = $refs.logos;
+                        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+                        ul.nextSibling.setAttribute('aria-hidden', 'true');
+                    })"
+                    className=" w-screen mt-16 inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] px-5"
+                >
+                    <ul x-ref="logos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                        <li>
+                            <Image src="/1.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/2.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/3.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/4.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/5.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/6.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/7.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/4.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                    </ul>     
+                    <ul x-ref="logos" className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                        <li>
+                            <Image src="/6.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/1.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/2.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/3.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/4.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/5.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/6.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                        <li>
+                        <Image src="/7.png" alt="appmax" width={300} height={0}/>
+                        </li>
+                    </ul>                
                 </div>
           </main>
         </div>
