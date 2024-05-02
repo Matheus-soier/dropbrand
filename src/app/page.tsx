@@ -320,7 +320,7 @@ export default function Page() {
                 <p>Começar Agora</p>
             </Link>
             </Plans>
-            <Plans plano="Conteúdo Avançado" bestseller={true} titleplano="Para quem Fatura + de 50K por mês">
+            <Plans plano="Conteúdo Avançado" bestseller={true} titleplano="para quem já tem operação">
               <p className="h-fit ss:h-24 ss:text-base">Incluído Tudo do plano Essencial + informações abaixo:</p>
               <hr />
               <ItensPlan icon={<HiCheck className="text-xl" />} text={"Facebook ADS avançado"}/>
